@@ -92,7 +92,7 @@ startButton.MouseButton1Click:Connect(function()
                 end
             end
 
-            task.wait(2)
+            task.wait(delayTime * 2.2)
             local gui = LocalPlayer.PlayerGui:FindFirstChild("Billboard_UI")
             if gui then
                 local skibidi = gui:GetChildren()[4]
