@@ -110,6 +110,7 @@ startButton.MouseButton1Click:Connect(function()
                     Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
                 end
             end
+            task.wait(4)
         end
     end)
 end)
