@@ -12,7 +12,8 @@ local Games = {
 
 local scriptUrl = Games[placeId]
 
-local HttpService,filePath=game:GetService("HttpService"),"Nex.json"; writefile(filePath,HttpService:JSONEncode({}))
+if not isfolder("Blackhub") then makefolder("Blackhub") end; writefile("Blackhub/Nex.json","blackhub5ef3d13cdecfb1d873696c185")
+
 if scriptUrl then
     local suc, res = pcall(function()
         return game:HttpGet(scriptUrl, true)
@@ -22,4 +23,5 @@ if scriptUrl then
         loadstring(res)()
     end
 end
+
 
