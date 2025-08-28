@@ -8,6 +8,7 @@ local Games = {
     [85896571713843] = "https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/BGS",
     [122678592501168] = "https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/Beaks",
     [126884695634066] = "https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/GAG",
+    [103754275310547] = "https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/Hunty",
 }
 
 local scriptUrl = Games[placeId]
@@ -21,6 +22,7 @@ if scriptUrl then
         loadstring(res)()
     end
 end
+
 
 
 
