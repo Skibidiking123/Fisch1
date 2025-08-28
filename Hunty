@@ -1,6 +1,14 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/HuntyMain"))()
-
-game.Players.LocalPlayer.OnTeleport:Connect(function()
-    queue_on_teleport([[loadstring(game:HttpGet("https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/FischMain"))()]])
+if not game:IsLoaded() then game.Loaded:Wait() end
+function missing(t, f, fallback)
+    if type(f) == t then return f end
+    return fallback
+end
+queueteleport =  missing("function", queue_on_teleport or (syn and syn.queue_on_teleport) or (fluxus and fluxus.queue_on_teleport))
+game.Players.LocalPlayer.OnTeleport:Connect(function(State)
+	if queueteleport then
+        queueteleport("print("Test")")
+		queueteleport("loadstring(game:HttpGet("https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/HuntyMain"))()")
+	end
 end)
 
