@@ -1,4 +1,7 @@
+local scriptUrl = "https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/HuntyMain"
+
+loadstring(game:HttpGet(scriptUrl))()
+
 queue_on_teleport([[
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/HuntyMain"))()
+    loadstring(game:HttpGet("]] .. scriptUrl .. [["))()
 ]])
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/HuntyMain"))()
