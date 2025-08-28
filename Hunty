@@ -8,7 +8,7 @@ queueteleport =  missing("function", queue_on_teleport or (syn and syn.queue_on_
 game.Players.LocalPlayer.OnTeleport:Connect(function(State)
 	if queueteleport then
         queueteleport("print('Test')")
-		queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/HuntyMain'))()")
+		queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/Hunty'))()")
 	end
 end)
 
