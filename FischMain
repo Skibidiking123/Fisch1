@@ -4,13 +4,12 @@ local placeId = game.PlaceId
 local Games = {
     [16732694052] = "https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/Sea1",
     [131716211654599] = "https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/Sea1",
-    [72907489978215] = "https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/Sea2",
     [85896571713843] = "https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/BGS",
     [122678592501168] = "https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/Beaks",
     [126884695634066] = "https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/GAG",
     [103754275310547] = "https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/GAG",
     [86076978383613] = "https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/GAG",
-    [121864768012064] = "https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/FishIt",
+    [121864768012064] = "https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/GAG",
 }
 
 local scriptUrl = Games[placeId]
@@ -24,6 +23,7 @@ if scriptUrl then
         loadstring(res)()
     end
 end
+
 
 
 
