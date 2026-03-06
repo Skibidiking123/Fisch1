@@ -90,7 +90,7 @@ Info:AddButton({
         setclipboard("https://ads.luarmor.net/get_key?for=Work_Ink-KdpjlrzBxVRU")
 	end,
 	DoubleClick = false,
-	Tooltip = "Please join",
+	Tooltip = "Copy Key Link",
 	Disabled = false,
 	Visible = true,
 	Risky = false,
@@ -102,7 +102,7 @@ Info:AddButton({
         setclipboard("https://ads.luarmor.net/get_key?for=Blackhub-BXnxVNzSsIpq")
 	end,
 	DoubleClick = false,
-	Tooltip = "Please join",
+	Tooltip = "Copy Key Link",
 	Disabled = false,
 	Visible = true,
 	Risky = false,
@@ -114,7 +114,19 @@ Info:AddButton({
         setclipboard("https://ads.luarmor.net/get_key?for=Linkvertise_-vgxOIRsxKrjP")
 	end,
 	DoubleClick = false,
-	Tooltip = "Please join",
+	Tooltip = "Copy Key Link",
+	Disabled = false,
+	Visible = true,
+	Risky = false,
+})
+
+Info:AddButton({
+	Text = "Buy a Permanent Key (Copy Link)",
+	Func = function()
+        setclipboard("https://blackhubnex.mysellauth.com/product/blackhub-key")
+	end,
+	DoubleClick = false,
+	Tooltip = "Copy Perm Key Link",
 	Disabled = false,
 	Visible = true,
 	Risky = false,
