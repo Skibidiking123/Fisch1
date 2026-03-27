@@ -1,17 +1,6 @@
 local HttpService = cloneref(game:GetService("HttpService"))
 local api = loadstring(game:HttpGet("https://sdkapi-public.luarmor.net/library.lua"))()
-
-local Games = {
-    [16732694052] = "2f39c003f341051c442e32c6cdc0e2df", -- Fisch
-    [131716211654599] = "2f39c003f341051c442e32c6cdc0e2df", -- Fisch
-    [131579468225600] = "2f39c003f341051c442e32c6cdc0e2df", -- Fisch
-    [76558904092080] = "3308da3a318482deddba01eda310a412", -- Forge
-    [129009554587176] = "3308da3a318482deddba01eda310a412", -- Forge
-    [131884594917121] = "3308da3a318482deddba01eda310a412", -- Forge
-    [14890802310] = "7156451dbc3d54b8da04d9700dfeba55", -- BL
-    [74747090658891] = "7156451dbc3d54b8da04d9700dfeba55", -- BL
-    [77923379150463] = "7156451dbc3d54b8da04d9700dfeba55", -- BL
-}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Skibidiking123/Module/refs/heads/main/BlackhubGames"))()
 
 if not isfolder("Blackhub") then
     makefolder("Blackhub")
@@ -24,7 +13,7 @@ if not isfile("Blackhub/Key/SavedKey.json") then
 end
 
 
-local currentScriptId = Games[game.PlaceId]
+local currentScriptId = getgenv().Games[game.PlaceId]
 if currentScriptId then
     api.script_id = currentScriptId
 end
