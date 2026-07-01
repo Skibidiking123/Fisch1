@@ -109,10 +109,23 @@ Info:AddButton({
 	Risky = false,
 })
 
+Info:AddDivider()
+
 Info:AddButton({
 	Text = "Buy a Permanent Key (Copy Link)",
 	Func = function()
         setclipboard("https://blackhubnex.mysellauth.com/product/blackhub-key")
+	end,
+	DoubleClick = false,
+	Tooltip = "Copy Perm Key Link",
+	Disabled = false,
+	Visible = true,
+	Risky = false,
+})
+Info:AddButton({
+	Text = "Buy a Permanent Key using robux (Copy Link)",
+	Func = function()
+        setclipboard("https://robuxpayments.com/permanent-key-w5w1iw")
 	end,
 	DoubleClick = false,
 	Tooltip = "Copy Perm Key Link",
