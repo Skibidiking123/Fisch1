@@ -122,17 +122,6 @@ Info:AddButton({
 	Visible = true,
 	Risky = false,
 })
-Info:AddButton({
-	Text = "Buy a Permanent Key using robux (Copy Link)",
-	Func = function()
-        setclipboard("https://robuxpayments.com/permanent-key-w5w1iw")
-	end,
-	DoubleClick = false,
-	Tooltip = "Copy Perm Key Link",
-	Disabled = false,
-	Visible = true,
-	Risky = false,
-})
 
 Info:AddInput("KeyInput", {
 	Default = nil,
